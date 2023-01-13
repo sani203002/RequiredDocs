@@ -18,74 +18,29 @@ class HomePage extends StatelessWidget {
           ),
           body: Container(
             padding: EdgeInsets.only(left: 8.0),
-            child: Column(
-              // mainAxisAlignment: MainAxisAlignment.start,
-              crossAxisAlignment: CrossAxisAlignment.start,
-
-              children: <Widget>[
-                SizedBox(
-                  height: 10.0,
-                ),
-                Texttitle(title: 'Cap allotment letter'),
-                SizedBox(
-                  height: 10.0,
-                ),
-                Texttitle(title: 'College fee receipt'),
-                SizedBox(
-                  height: 10.0,
-                ),
-                Texttitle(title: 'Marksheet of SSC(10th std)'),
-                SizedBox(
-                  height: 10.0,
-                ),
-                Texttitle(title: 'Marksheet of HSC(12th std)'),
-                SizedBox(
-                  height: 10.0,
-                ),
-                Texttitle(title: 'Previous Year Marksheet'),
-                SizedBox(
-                  height: 10.0,
-                ),
-                Texttitle(title: 'All semester Marksheets'),
-                SizedBox(
-                  height: 10.0,
-                ),
-                Texttitle(title: 'Caste Certificate'),
-                SizedBox(
-                  height: 10.0,
-                ),
-                Texttitle(
-                    title:
-                        'Income Certificate of current financial year(from Tehsildar)'),
-                SizedBox(
-                  height: 10.0,
-                ),
-                Texttitle(title: 'Bank Passbook'),
-                SizedBox(
-                  height: 10.0,
-                ),
-                Texttitle(title: 'Self Declaration'),
-                SizedBox(
-                  height: 10.0,
-                ),
-                Texttitle(title: 'Domicile Certificate'),
-                SizedBox(
-                  height: 10.0,
-                ),
-                Texttitle(title: 'Rashan Card'),
-                SizedBox(
-                  height: 10.0,
-                ),
-                Texttitle(title: 'Hostel Certificate(if Required)'),
-                SizedBox(
-                  height: 10.0,
-                ),
-                Texttitle(title: 'Gap Certificate(if Required)'),
-                SizedBox(
-                  height: 10.0,
-                ),
-                Texttitle(title: 'Handicap Certificate(if Required)'),
-              ],
+            child: SingleChildScrollView(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: <Widget>[
+                  Texttitle(title: '1) Cap allotment letter'),
+                  Texttitle(title: '2) College fee receipt'),
+                  Texttitle(title: '3) Marksheet of SSC(10th std)'),
+                  Texttitle(title: '4) Marksheet of HSC(12th std)'),
+                  Texttitle(title: '5) Previous Year Marksheet'),
+                  Texttitle(title: '6) All semester Marksheets'),
+                  Texttitle(title: '7) Caste Certificate'),
+                  Texttitle(
+                      title:
+                          '8) Income Certificate of current financial year(from Tehsildar)'),
+                  Texttitle(title: '9) Bank Passbook'),
+                  Texttitle(title: '10) Self Declaration'),
+                  Texttitle(title: '11) Domicile Certificate'),
+                  Texttitle(title: '12) Rashan Card'),
+                  Texttitle(title: '13) Hostel Certificate(if Required)'),
+                  Texttitle(title: '14) Gap Certificate(if Required)'),
+                  Texttitle(title: '15) Handicap Certificate(if Required)'),
+                ],
+              ),
             ),
           ),
         ),
@@ -100,10 +55,13 @@ class Texttitle extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Text(
-      title,
-      style: TextStyle(
-        fontSize: 20.0,
+    return Padding(
+      padding: const EdgeInsets.all(10.0),
+      child: Text(
+        title,
+        style: TextStyle(
+          fontSize: 20.0,
+        ),
       ),
     );
   }
