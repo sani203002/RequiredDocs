@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'text_title.dart';
 
 void main() {
   runApp(
